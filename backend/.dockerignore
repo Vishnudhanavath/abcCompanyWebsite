@@ -1,0 +1,8 @@
+target/*.jar.original
+target/*.class
+node_modules
+.git
+.gitignore
+Dockerfile
+README.md
+*.log
