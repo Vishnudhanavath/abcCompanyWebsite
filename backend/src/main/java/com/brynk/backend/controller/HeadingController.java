@@ -19,7 +19,7 @@ public class HeadingController {
     public HeadingText getHeading() {
         List<HeadingText> allHeadings = repository.findAll();
         return allHeadings.isEmpty()
-                ? new HeadingText(0L, "Default Heading (No Data)")
+                ? new HeadingText(0L, "Hyper boost your Revenue Management, Marketing and Commercial Functions with Business Ready AI")
                 : allHeadings.get(0);
     }
 

@@ -26,7 +26,7 @@ const CMSForm = () => {
     if (!editMode) return;
 
     try {
-      await axios.post('http://localhost:8080/api/heading', { text });
+      await axios.post('https://abccompanywebsite-3.onrender.com/api/heading', { text });
       alert('Heading updated successfully!');
       setEditMode(false);
     } catch (error) {

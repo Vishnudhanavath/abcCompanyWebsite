@@ -11,7 +11,7 @@ const HeadingDisplay = () => {
     useEffect(() =>{
         const fetchHeading = async () => {
             try {
-                const response = await axios.get('http://localhost:8080/api/heading');
+                const response = await axios.get('https://abccompanywebsite-3.onrender.com/api/heading');
                 setHeading(response.data.text);
             } catch (err) {
                 console.error(err);
