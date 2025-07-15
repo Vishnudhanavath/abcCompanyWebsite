@@ -11,7 +11,7 @@ const CMSForm = () => {
   useEffect(() => {
     const fetchHeading = async () => {
       try {
-        const response = await axios.get('http://localhost:8080/api/heading');
+        const response = await axios.get('https://abccompanywebsite-4.onrender.com/api/heading');
         setText(response.data.text);
       } catch (error) {
         console.error('Failed to fetch heading:', error);
@@ -26,7 +26,7 @@ const CMSForm = () => {
     if (!editMode) return;
 
     try {
-      await axios.post('https://abccompanywebsite-3.onrender.com/api/heading', { text });
+      await axios.post('https://abccompanywebsite-4.onrender.com/api/heading', { text });
       alert('Heading updated successfully!');
       setEditMode(false);
     } catch (error) {
